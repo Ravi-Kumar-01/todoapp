@@ -1,0 +1,7 @@
+.addConatiner {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'muli';
+}
