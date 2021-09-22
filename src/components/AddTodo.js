@@ -15,44 +15,32 @@ export const AddTodo = ({ addTodo }) => {
 
     }
 
-    return ( <
-        div className = "addConatiner" >
-        <
-        form onSubmit = { submit } >
-        <
-        div >
-        <
-        label > Add Todo in List < /label> <br/ > <
-        input type = "text"
+    return ( 
+        <div className = "addConatiner" >
+        <form onSubmit = { submit } >
+        <div >
+        <label > Add Todo in List </label> <br/>
+        <input type = "text"
         value = { title }
         onChange = {
             (e) => { setTitle(e.target.value) }
         }
-        / > < /
-        div >
-        <
-        br / >
-        <
-        div >
-        <
-        label > Add Description of Todo < /label > < br / >
-        <
-        input type = "text"
+        /> 
+        </div >
+        <br/>
+        <div>
+        <label> Add Description of Todo </label> <br/>
+        <input type = "text"
         value = { desc }
         onChange = {
             (e) => { setDesc(e.target.value) }
         }
-        / > < /
-        div >
-        <
-        br / >
-        <
-        br / > <
-        button style = {
-            { backgroundColor: "green", color: "white" }
-        }
-        type = "submit" > Add to list < /button> < /
-        form > <
-        /div>
+        />
+        </div>
+        <br/>
+        <br/> 
+        <button style = { { backgroundColor: "green", color: "white" } } type = "submit" > Add to list </button>
+        </form>
+        </div>
     )
 }

@@ -7,11 +7,6 @@ import { TodoContainer } from "./components/TodoContainer";
 import { Footer } from "./components/Footer";
 // import About from "./components/About";
 import { AddTodo } from './components/AddTodo'
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route
-} from "react-router-dom";
 
 
 
@@ -50,21 +45,14 @@ function App(todo) {
     ])
 
 
-    return ( <
-        >
-        <
-        Navbar / >
-        <
-        div className = "todoContainer" >
-        <
-        AddTodo addTodo = { addTodo }
-        / >  <
-        TodoContainer todos = { todos }
-        onDelete = { onDelete }
-        / > < /
-        div >
-        <
-        />
+    return ( 
+        <>
+        <Navbar/>
+        <div className = "todoContainer" >
+        <AddTodo addTodo = {addTodo}/>
+        <TodoContainer todos = {todos} onDelete = { onDelete }/> 
+        </div>
+        </>
     );
 
 }
